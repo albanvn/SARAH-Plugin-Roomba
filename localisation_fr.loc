@@ -1,0 +1,9 @@
+NOCONFIGURATION#Le pleug ine Roumba n'est pas configuré.
+OKLETSDOIT#Très bien, je m'en occuppe !
+UNKNOWNPATH#Je ne connais pas ce chemin.
+CANNOTWAKEUP#Je n'arrive pas a allumer l'aspirateur.
+NOCONNEXION#Impossible de se connecter a l'aspirateur.
+STATUSREPORT#L'aspirateur est %LEFT% à gauche et %RIGHT% à droite,
+STATUSREPORTEXTENDED#chargé à %CHARGE% pour cent
+ROOMBASTATE#Sans charge~En charge~En charge~Chargé~Attente~Erreur
+ROOMBADIRT#propre~peu sale~assez sale~très sale~très très sale

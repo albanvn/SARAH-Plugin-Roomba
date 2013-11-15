@@ -1,0 +1,80 @@
+
+.plugin-gridster.roomba2 .logo,
+.plugin-gridster.roomba2 .text {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.plugin-gridster.roomba2 .logo {
+  background: #33A3EC;
+  left: 0; width: 35%; 
+}
+
+.plugin-gridster.roomba2 .logo .ajax {
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.plugin-gridster.roomba2 .text {
+  background: #FFFFFF;
+  right: 0; width: 65%; 
+  text-align: left;
+}
+.plugin-gridster.roomba2 .text .title {
+  font-size: 22px; line-height: 22px;
+  font-weight: bold;
+}
+.plugin-gridster.roomba2 .text .author {
+  font-size: 12px;
+  text-align: right;
+  width: 90%
+}
+.plugin-gridster.roomba2 .text .status {
+  font-size: 11px; 
+  line-height: 11px;  
+  font-weight: bold;
+}
+.plugin-gridster.roomba2 .text .status img {
+  vertical-align: center;
+}
+.plugin-gridster.roomba2 .level
+{
+	height: 19px;
+	width: 90px;
+	float: left;
+	font-size: 11px;
+	line-height: 11px;
+    font-weight: bold;
+}
+.plugin-gridster.roomba2 .redbar
+{
+	width: 30px;
+	height: 11px;
+	background: red;
+	float:right;
+	border:solid 1px black;
+	color: white;
+	text-align:center;
+}
+.plugin-gridster.roomba2 .greenbar
+{
+	height: 100%;
+	background: green;
+}
+.plugin-gridster.roomba2 .bluebar
+{
+	width: 30px;
+	height: 90%;
+	background: lightblue;
+	float:right;
+	border:solid 1px black;
+	color: white;
+	text-align:center;
+}
+.plugin-gridster.roomba2 .brownbar
+{
+	height: 100%;
+	background: brown;
+}

@@ -1,0 +1,14 @@
+SARAH-Plugin-Roomba2
+--------------------
+by Alban Vidal-Naquet (albanvn@gmail.com)
+
+SARAH-Plugin-Roomba2 is a component of the open source projet SARAH (http://encausse.wordpress.com/s-a-r-a-h/).
+
+ChangeLog.txt
+-------------
+
+v1.1: 15/11/2013
+	-First public release
+	
+v1.0: 1/09/2013
+	-First release

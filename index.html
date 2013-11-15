@@ -1,0 +1,45 @@
+<div id="roomba2">  
+	<div style="float:left;margin-right:20px;">
+  <a href="http://www.irobot.com/global/fr/roomba_range.aspx"><img src="/assets/roomba2/images/Roomba_logo.png" width="150"><br>
+  <a href="http://www.roomba-wifi-remote.com/tag/roowifi/"><img src="/assets/roomba2/images/roowifi.png" width="150"></a>
+ </div>
+		<p>Le plugin Roomba2 permet de piloter les aspirateur ROOMBA équipés de la carte <a href="http://www.roomba-wifi-remote.com/tag/roowifi/">RooWifi</a></p>
+		<p>Pour que le plugin fonctionne correctement, il faut configurer celui-ci et renseigner notamment les champs ip, admin et password qui permettront à SARAH de se connecter au ROOMBA.</p>
+		<p>Les champs supplémentaires dans la configuration du plugin permettent de spécifier des chemins précis auquel le ROOMBA pourra se rendre en étant piloter par SARAH. Ainsi les champs path#_name permet d'identifier un chemin en indiquant son nom, par exemple "La chambre" et path#_cmd permet de décrire le chemin pour aller jusqu'à la chambre depuis la base du ROOMBA (en imaginant que le ROOMBA part toujours de sa base pour aller dans la chambre). Pour la syntaxe des commandes, elle se compose d'une chaine de caracteres décrivant une fonction: soit un type de déplacement (avancer/reculer/tourner à gauche/tourner à droite) soit une action (mode CLEAN/DOCK/SPOT) suivi d'un argument propre à la fonction.<br><br>Voici la syntaxe des fonctions:<p>
+		<ul>
+		  <li>aXX: avance durant XX secondes</li>
+		  <li>rXX: recule durant XX secondes</li>
+		  <li>dXXX: tourne à droite de XXX degrée avec XXX>0 et XXX<180° et XXX mutliple de 15°</li>
+		  <li>gXXX: tourne à gauche de XXX degrée avec XXX>0 et XXX<180° et XXX mutliple de 15°</li>
+		  <li>CXX:  lance le mode CLEAN pendant XX minutes. Si XX=00 alors jusqu'a batterie épuisée</li>
+		  <li>DXX:  lance le mode DOCK pendant XX minutes. Si XX=00 alors jusqu'a batterie épuisée</li>
+		  <li>SXX:  lance le mode SPOT pendant XX minutes. Si XX=00 alors jusqu'a batterie épuisée</li>
+		</ul>
+		Ainsi la chaine "r08d090a06d045a10C00" signifiera au ROOMBA:
+		  <ul>
+		  <li>recule pendant 8 secondes</li>
+		  <li>tourne sur la droite de 90°</li>
+		  <li>avance pendant 6 secondes</li>
+		  <li>tourne sur la droite de 45°</li>
+		  <li>avance pendant 10 secondes</li>
+		  <li>lance le mode clean puis rentre à la base quand tu auras fini.</li>
+		  </ul>
+		 
+	<h4><u>Voici un exemple non exaustif des commandes vocales reconnues par le plugin ROOMBA dans SARAH:</u></h4>
+    <ul>
+        <li>nettoie la zone</li>
+        <li>passe {le ROOMBA/l'aspirateur}</li>
+        <li>range {le ROOMBA/l'aspirateur}</li>
+        <li>lance {le ROOMBA/l'aspirateur}</li>
+        <li>demarre {le ROOMBA/l'aspirateur}</li>
+        <li>arrete {le ROOMBA/l'aspirateur}</li>
+        <li>stop {le ROOMBA/l'aspirateur}</li>
+        <li>est-ce que {le ROOMBA/l'aspirateur} est {propre/sale}</li>
+		<li>quel est l'état {du ROOMBA/de l'aspirateur}</li>
+        <li>lance {le ROOMBA/l'aspirateur} dans {nom_lieu}</li>
+        <li>passe {le ROOMBA/l'aspirateur} dans {nom_lieu}</li>
+    </ul>
+    </p>
+    <br/><br/><br/>
+
+</div>

@@ -1,0 +1,20 @@
+<% stylesheet('assets/'+key+'/portlet.css') %>
+<% 
+  var roomba2 = SARAH.ConfigManager.getModule(key); 
+  var status  = roomba2.getStatus(SARAH.ConfigManager.getConfig().modules.roomba2, SARAH); 
+%>
+
+<div class="logo">
+  <a href="sarah/<%=key%>?mode=FULLSTATUS" class="ajax"><img src="/assets/<%=key%>/images/roomba_logo.png" title="Demande à SARAH un état du Roomba"></a>
+</div>
+<div class="text">
+  <br/><span class="title">Roomba2</span>
+  <div class="author">by AVN</div>
+  <% if (status.alive != 0) { %>
+  <span class="status">Connexion : <img src="/assets/<%=key%>/images/ok.png" title="connected"></span><br><br>
+  <div class="level"><%=status.state %><div class="redbar"><div class="greenbar" style="width:<%= status.charge*30/100 %>px;"><%= status.charge %>%</div></div></div>
+  <div class="level"><table><tr><td>Sale:</td><td><div class="bluebar"><div class="brownbar" style="width:<%= status.left*30/100 %>px;"><%= status.left %>%</div></div></td><td><div class="bluebar"><div class="brownbar" style="width:<%=status.right*30/100 %>px;"><%= status.right %>%</div></div></tr></table></div>
+  <% } else { %>
+  <span class="status">Connexion : <img src="/assets/<%=key%>/images/ko.png" title="no connexion"></span><br><br>
+  <% } %>
+</div>

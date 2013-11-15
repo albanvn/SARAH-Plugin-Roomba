@@ -1,0 +1,45 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleroomba2" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleroomba2" scope="public">
+    <example>Sarah passe l'aspirateur</example>
+    <tag>out.action=new Object(); </tag>
+    <item>Sarah</item>
+    <one-of>
+      <item>nettoie la zone<tag>out.action.mode="SPOT";</tag></item>
+      <item>passe l'aspirateur<tag>out.action.mode="CLEAN";</tag></item>
+      <item>passe le roume ba<tag>out.action.mode="CLEAN";</tag></item>
+      <item>range l'aspirateur<tag>out.action.mode="DOCK";</tag></item>
+      <item>range le roume ba<tag>out.action.mode="DOCK";</tag></item>
+      <item>lance l'aspirateur<tag>out.action.mode="CLEAN";</tag></item>
+      <item>lance le roume ba<tag>out.action.mode="CLEAN";</tag></item>
+      <item>démarre le roume ba<tag>out.action.mode="CLEAN";</tag></item>
+      <item>démarre l'aspirateur<tag>out.action.mode="CLEAN";</tag></item>
+      <item>arrête le roume ba<tag>out.action.mode="DOCK";</tag></item>
+      <item>arrête l'aspirateur<tag>out.action.mode="DOCK";</tag></item>
+      <item>stop le roume ba<tag>out.action.mode="DOCK";</tag></item>
+      <item>stop l'aspirateur<tag>out.action.mode="DOCK";</tag></item>
+      <item>quel est l'état de l'aspirateur<tag>out.action.mode="FULLSTATUS";</tag></item>
+      <item>quel est l'état du roume ba<tag>out.action.mode="FULLSTATUS";</tag></item>
+      <item>est-ce que le roume ba est propre<tag>out.action.mode="SHORTSTATUS";</tag></item>
+      <item>est-ce que le roume ba est sale<tag>out.action.mode="SHORTSTATUS";</tag></item>
+      <item>est-ce que l'aspirateur est propre<tag>out.action.mode="SHORTSTATUS";</tag></item>
+      <item>est-ce que l'aspirateur est sale<tag>out.action.mode="SHORTSTATUS";</tag></item>
+	  <item>
+	    <one-of>
+	      <item>lance l'aspirateur dans</item>
+		  <item>passe l'aspirateur dans</item>
+	      <item>lance le roume ba dans</item>
+		  <item>passe le roume ba dans</item>
+	    </one-of>
+ 	<!-- Automatic Generation § -->
+<!-- § Automatic Generation -->
+	  </item>
+   </one-of>
+    <item repeat="0-1">
+      <one-of>
+        <item>s'il te plait</item>
+        <item>si il te plait</item>
+      </one-of>
+    </item>	
+   <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/roomba2";</tag>
+  </rule>
+</grammar>

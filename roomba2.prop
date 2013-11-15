@@ -1,0 +1,21 @@
+{
+  "modules": { 
+    "roomba2": {
+      "description": "Permet de piloter les aspirateurs Roomba avec une carte Roowifi",
+      "version": "1.1",
+      "ip_roomba" : "",
+      "admin" : "",
+      "password" : "",
+	  "path1_name": "",
+	  "path1_cmd": "",
+	  "path2_name": "",
+	  "path2_cmd": "",
+	  "path3_name": "",
+	  "path3_cmd": "",
+	  "path4_name": "",
+	  "path4_cmd": "",
+	  "path5_name": "",
+	  "path5_cmd": ""
+    }
+  }
+}
